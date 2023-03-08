@@ -1,0 +1,155 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+        <a href="conf.html" style="display: block; margin-bottom: 20px;">
+            Правовая информация
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="orderModal">
+            Быстрый заказ
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="thankModal">
+            Спасибо!
+        </button>
+
+    </div>
+
+    <div class="modal" id="orderModal">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
+            </svg>
+        </button>
+        <div class="modal__title">
+            Заявка для заказа <span>Dior CD 30 MONTAIGNEMINIO B2I 3000</span>
+        </div>
+        <form action="" class="modal__form">
+            <div class="modal__form-grid">
+                <fieldset class="fg _error">
+    <input type="text">
+    <label>
+        Имя <span>*</span>
+    </label>
+    <span class="fg__error">Обязательное поле</span>
+</fieldset>
+
+                <fieldset class="fg ">
+    <input type="email">
+    <label>
+        Email Address
+    </label>
+    <span class="fg__error">Обязательное поле</span>
+</fieldset>
+
+                <fieldset class="fg ">
+    <input type="tel">
+    <label>
+        Телефон
+    </label>
+    <span class="fg__error">Обязательное поле</span>
+</fieldset>
+
+                <fieldset class="fg ">
+    <input type="text">
+    <label>
+        Last Name
+    </label>
+    <span class="fg__error">Обязательное поле</span>
+</fieldset>
+
+                <fieldset class="fg _full">
+    <textarea></textarea>
+    <label>
+        Сообщение
+    </label>
+</fieldset>
+
+            </div>
+            <div class="modal__nav">
+                <button class="contacts__btn m-btn m-btn-outline">
+                    <span class="_view1">Отправить заявку</span>
+                    <span class="_view2">Отправить</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 11.0001V13.0001H16L10.5 18.5001L11.92 19.9201L19.84 12.0001L11.92 4.08008L10.5 5.50008L16 11.0001H4Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </form>
+        <div class="modal__hint">
+            * поля обязательные для заполнения
+        </div>
+    </div>
+</div>
+
+<div class="modal thank-modal" id="thankModal">
+    <div class="modal__bg"></div>
+    <div class="modal__dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.07108 0.928922C0.582923 1.41708 0.582923 2.20853 1.07108 2.69669L6.37436 7.99997L1.07105 13.3033C0.582898 13.7914 0.582897 14.5829 1.07105 15.0711C1.55921 15.5592 2.35066 15.5592 2.83882 15.0711L8.14213 9.76774L13.4454 15.0711C13.9336 15.5592 14.7251 15.5592 15.2132 15.0711C15.7014 14.5829 15.7014 13.7914 15.2132 13.3033L9.9099 7.99997L15.2132 2.69668C15.7013 2.20853 15.7013 1.41707 15.2132 0.928917C14.725 0.440762 13.9336 0.440763 13.4454 0.928917L8.14213 6.23221L2.83885 0.928922C2.35069 0.440766 1.55923 0.440766 1.07108 0.928922Z" fill="#141B31"/>
+            </svg>
+        </button>
+        <div class="contacts-thanks">
+    <div class="contacts-thanks__title display3">
+        Спасибо!
+    </div>
+    <div class="contacts-thanks__desc">
+        <p>
+            Мы получили вашу заявку <br>
+            и наши консультанты свяжутся с вами <br>
+            в ближайшее время для уточнения <br>
+            деталей заказа.
+        </p>
+    </div>
+    <button class="contacts-thanks__btn m-btn m-btn-outline">
+        <span>ХОРОШО</span>
+    </button>
+</div>
+
+    </div>
+</div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
